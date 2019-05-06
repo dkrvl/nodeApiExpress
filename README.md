@@ -4,11 +4,11 @@ Learning NODE API
 
 Add config/db.js
 with below
-
+```
 module.exports = {
     url: `mongodb://<USERNAME>:<PASSWORD>@HOSTURL/<DBNAME>`
 }
-
+```
 ======================================================
 
 **To Run project**
