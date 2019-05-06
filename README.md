@@ -5,9 +5,11 @@ Learning NODE API
 Add config/db.js
 with below
 
+```
 module.exports = {
-    url: `mongodb://<USERNAME>:<PASSWORD>@HOSTURL/<DBNAME>`
+    url: `mongodb://dipakraval:dipakraval1984@ds247944.mlab.com:47944/drmongodbtest`
 }
+```
 
 ======================================================
 
