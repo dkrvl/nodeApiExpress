@@ -7,7 +7,7 @@ with below
 
 ```
 module.exports = {
-    url: `mongodb://dipakraval:dipakraval1984@ds247944.mlab.com:47944/drmongodbtest`
+    url: `mongodb://<USERNAME>:<PASSWORD>@HOSTURL/<DBNAME>`
 }
 ```
 
