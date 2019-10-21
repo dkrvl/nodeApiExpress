@@ -37,6 +37,26 @@ module.exports = function (app, db) {
       }
     });
   });
+  app.get('/notes/', (req, res) => {
+    console.log(db.collection('notes'))
+    // const id = req.params.id;
+    // const details = { '_id': new ObjectID(id) };
+    // db.collection('notes').findOne(details, (err, item) => {
+
+    //   if (err) {
+    //       res.send({'error':'An error has occurred'});
+    //   } else {
+    //     res.send(item);
+    //   }
+    // });
+   // db.collection('notes').toArray(function (err, collInfos) {
+      res.end(db.listCollections().toArray());
+      // collInfos is an array of collection info objects that look like:
+      // { name: 'test', options: {} }
+   // });
+
+    
+  });
   app.post('/notes', (req, res) => {
     const note = { text: req.body.body, title: req.body.title };
     db.collection('notes').insert(note, (err, result) => {
